@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+}
+
+.controls {
+  margin-bottom: 10px;
+}
+
+.mode-buttons {
+  margin-bottom: 15px;
+}
+
+.mode-buttons button {
+  margin: 0 6px;
+  padding: 8px 15px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: background 0.3s;
+}
+
+.mode-buttons button.active,
+.mode-buttons button:hover:not(:disabled) {
+  background: #6c63ff;
+  color: white;
+}
+
+.mode-buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(20, 25px);
+  justify-content: center;
+  gap: 2px;
+  user-select: none;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(30, 25px);
+  gap: 2px;
+}
+
+.node {
+  width: 25px;
+  height: 25px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.node.wall {
+  background: #333;
+}
+
+.node.start {
+  background: #28a745;
+  box-shadow: 0 0 6px #28a745aa;
+}
+
+.node.end {
+  background: #dc3545;
+  box-shadow: 0 0 6px #dc3545aa;
+}
+
+.node.explored {
+  background: #74b9ff;
+}
+
+.node.path {
+  background: #fdcb6e;
+  box-shadow: 0 0 6px #fdcb6eaa;
+}
+
+.buttons {
+  margin-top: 15px;
+}
+
+.buttons button {
+  margin: 0 10px;
+  padding: 10px 18px;
+  border: none;
+  background: #6c63ff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.buttons button:hover:not(:disabled) {
+  background: #574fd6;
+}
+
+.buttons button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
