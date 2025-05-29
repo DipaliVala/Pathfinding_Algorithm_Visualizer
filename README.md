@@ -1,4 +1,10 @@
-# Pathfinding Algorithm Visualizer
+# Pathfinding Algorithm Visualization 🗺️✨
+
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/downloads/)
+[![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green?logo=fastapi)](https://fastapi.tiangolo.com/)
+[![React](https://img.shields.io/badge/React-18.x-blue?logo=react)](https://reactjs.org/)
+[![Algorithms](https://img.shields.io/badge/Algorithms-A*,%20BFS-green.svg)](https://en.wikipedia.org/wiki/Pathfinding)
+
 
 An interactive Pathfinding Algorithm Visualizer built with **React.js** (frontend) and **Python FastAPI** (backend).  
 It allows users to create custom mazes, set start/end points, select pathfinding algorithms (A* and BFS), and watch step-by-step visualizations of how these algorithms explore the maze and find the shortest path.
